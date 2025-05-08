@@ -40,4 +40,17 @@ pipeline {
             }
         }
     }
+
+    post {
+        success {
+            echo "Succes∑"
+        }
+
+        failure {
+            echo "Failed"
+        }
+        always {
+            bat 'docker logout'
+        }
+    }
 }
