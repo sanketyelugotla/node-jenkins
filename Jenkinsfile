@@ -36,7 +36,7 @@ pipeline {
 
         stage("Deploy") {
             steps {
-                bat "docker run -p 8085:80 --name $CONTAINER_NAME $IMAGE_NAME:$TAG"
+                bat "docker run -d -p 8085:80 --name $CONTAINER_NAME $IMAGE_NAME:$TAG"
             }
         }
     }
