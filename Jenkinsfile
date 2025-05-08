@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME: "sanketyelugotla/node"
+        IMAGE_NAME: "sanketyelugotla/node-jenkins"
         TAG: "lates"
         CONTAINER_NAME: "node-cont"
     }
