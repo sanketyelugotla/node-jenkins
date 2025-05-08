@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME: "sanketyelugotla/node"
-        TAG: "lates"
-        CONTAINER_NAME: "node-cont"
+        IMAGE_NAME = "sanketyelugotla/node"
+        TAG = "latest"
+        CONTAINER_NAME = "node-cont"
     }
 
     stages {
